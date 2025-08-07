@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동차 브랜드 검색</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚗 자동차 브랜드 검색</h1>
+            <p>원하는 자동차 브랜드를 검색하여 특징을 알아보세요</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="자동차 브랜드명을 입력하세요 (예: 현대, BMW, 토요타)">
+                <button id="searchBtn">검색</button>
+            </div>
+        </div>
+
+        <div class="results-section" id="resultsSection">
+            <div class="brand-card" id="brandCard" style="display: none;">
+                <div class="brand-header">
+                    <h2 id="brandName"></h2>
+                    <div class="brand-logo" id="brandLogo"></div>
+                </div>
+                <div class="brand-info">
+                    <div class="info-item">
+                        <span class="label">국가:</span>
+                        <span id="brandCountry"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">설립년도:</span>
+                        <span id="brandYear"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">주요 특징:</span>
+                        <span id="brandFeatures"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">대표 모델:</span>
+                        <span id="brandModels"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">기술 특징:</span>
+                        <span id="brandTechFeatures"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">장점:</span>
+                        <span id="brandStrengths"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">단점:</span>
+                        <span id="brandWeaknesses"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">특별 기술:</span>
+                        <span id="brandSpecialTech"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">브랜드 설명:</span>
+                        <p id="brandDescription"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="no-results" id="noResults" style="display: none;">
+                <h3>검색 결과가 없습니다</h3>
+                <p>다른 브랜드명으로 검색해보세요</p>
+            </div>
+        </div>
+
+        <div class="popular-brands">
+            <h3>인기 브랜드</h3>
+            <div class="brand-chips">
+                <span class="chip" data-brand="현대">현대</span>
+                <span class="chip" data-brand="기아">기아</span>
+                <span class="chip" data-brand="BMW">BMW</span>
+                <span class="chip" data-brand="벤츠">벤츠</span>
+                <span class="chip" data-brand="아우디">아우디</span>
+                <span class="chip" data-brand="토요타">토요타</span>
+                <span class="chip" data-brand="혼다">혼다</span>
+                <span class="chip" data-brand="폭스바겐">폭스바겐</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
